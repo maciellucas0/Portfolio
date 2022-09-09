@@ -1,4 +1,5 @@
 import { Header } from "./components/header";
+import Sobre from "./components/sobre";
 import Global from "./style/global";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Global />
       <Header />
+      <Sobre />
     </>
   );
 }
