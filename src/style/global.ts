@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	min-height:100vh;
 	line-height: 1;
     background:var(--cor-fundo);
 }
