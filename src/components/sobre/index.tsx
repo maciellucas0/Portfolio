@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
@@ -10,6 +11,7 @@ import {
   FcCallback,
   FcFlashOn,
   FcApproval,
+  FcBinoculars,
 } from "react-icons/fc";
 import semFundo from "../../assets/media.png";
 import {
@@ -104,12 +106,26 @@ export default function Sobre() {
           </SpeedDial>
         </Box>
         <StyledDivGit>
-          <a href="https://github.com/maciellucas0">Github</a>
+          <a href="https://github.com/maciellucas0">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ661_VwO4iG6mzSlGKrrM3SD7L8iPCl7Zg&usqp=CAU"
+              alt=""
+            />{" "}
+            Github
+          </a>
 
           <a href="https://www.linkedin.com/in/lucas-maciel-31293a198/">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+              alt="linkedin"
+            />{" "}
             Linkedin
           </a>
         </StyledDivGit>
+        <button id="verProjetos">
+          Ver Projetos..
+          <FcBinoculars size={30} />
+        </button>
       </StyledMain>
     </>
   );
