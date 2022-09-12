@@ -5,7 +5,7 @@ export const StyledMain = styled.main`
   height: 80vh;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 4rem;
   img {
     width: 300px;
     height: 300px;
@@ -36,10 +36,46 @@ export const StyledMain = styled.main`
     right: 5%;
   }
 
+  #verProjetos {
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 3%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  @media (max-width: 450px) {
+    #verProjetos {
+      display: none;
+    }
+  }
+  #verProjetos:hover {
+    background-color: black;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    transition: 1s;
+    color: white;
+  }
   @media (max-width: 720px) {
+    margin-top: 1rem;
     img {
       width: 200px;
       height: 200px;
+    }
+
+    .dial {
+      position: absolute;
+      bottom: 0.5%;
+      right: 5%;
     }
   }
 `;
@@ -98,4 +134,27 @@ export const StyledDivGit = styled.div`
   flex-direction: row;
   justify-content: center;
   width: 90%;
+  gap: 2rem;
+  margin-left: 5%;
+
+  a {
+    font-family: "Alumni Sans Pinstripe";
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    margin: 0 auto;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
 `;
