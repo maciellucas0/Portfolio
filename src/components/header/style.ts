@@ -42,7 +42,7 @@ export const StyledSection = styled.nav`
   flex-direction: row;
   gap: 60px;
 
-  button {
+  a {
     cursor: pointer;
     border: none;
     background: transparent;
@@ -61,8 +61,8 @@ export const StyledSection = styled.nav`
   }
   @media (max-width: 720px) {
     gap: 10px;
-    button {
-      font-size: 0.7rem;
+    a {
+      font-size: 0.9rem;
     }
   }
 `;

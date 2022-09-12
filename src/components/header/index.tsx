@@ -10,9 +10,15 @@ export const Header = () => {
           <span>Lucas Maciel</span>
         </StyledLogo>
         <StyledSection>
-          <button className="vidro">Projetos</button>
-          <button className="vidro">Sobre mim</button>
-          <button className="vidro">Contato</button>
+          <a href="#section2" className="vidro">
+            Projetos
+          </a>
+          <a href="#session3" className="vidro">
+            Sobre mim
+          </a>
+          <a href="#session4" className="vidro">
+            Contato
+          </a>
         </StyledSection>
       </StyledHeader>
     </>

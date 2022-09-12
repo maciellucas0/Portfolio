@@ -1,5 +1,5 @@
 import { Header } from "./components/header";
-import Sobre from "./components/sobre";
+import Sobre from "./components/homePage";
 import Global from "./style/global";
 
 function App() {
