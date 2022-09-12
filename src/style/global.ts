@@ -40,6 +40,11 @@ body {
 	min-height:100vh;
 	line-height: 1;
     background:var(--cor-fundo);
+	
+}
+html{
+	scroll-behavior:smooth;
+	overflow-x:hidden;
 }
 ol, ul {
 	list-style: none;
@@ -57,5 +62,8 @@ table {
 	border-spacing: 0;
 }
 
-
+section{
+	width:100%;
+	height:100vh;
+}
 `;

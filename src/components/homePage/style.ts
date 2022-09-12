@@ -12,7 +12,7 @@ export const StyledMain = styled.main`
     border-radius: 50%;
     margin: 0 auto;
   }
-  section {
+  .sessao {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -20,12 +20,12 @@ export const StyledMain = styled.main`
     text-align: center;
     margin: 0 auto;
   }
-  section h2 {
+  .sessao h2 {
     font-family: "Bebas Neue", cursive;
     font-size: 3rem;
   }
 
-  section p {
+  .sessao p {
     font-family: "Alumni Sans Pinstripe";
     font-size: 2rem;
   }
@@ -52,6 +52,8 @@ export const StyledMain = styled.main`
     justify-content: center;
     align-items: center;
     padding: 5px;
+    color: black;
+    text-decoration: none;
   }
   @media (max-width: 450px) {
     #verProjetos {
@@ -156,5 +158,75 @@ export const StyledDivGit = styled.div`
       width: 4rem;
       height: 4rem;
     }
+  }
+`;
+
+export const StyledModal = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 2rem;
+  }
+  li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Alumni Sans Pinstripe";
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  img {
+    width: 80px;
+    height: 50px;
+  }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .closeButton {
+    color: red;
+    width: 50px;
+    height: 50px;
+  }
+
+  a {
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Alumni Sans Pinstripe";
+    font-weight: 600;
   }
 `;
